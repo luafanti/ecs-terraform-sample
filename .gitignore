@@ -1,0 +1,28 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfvars files
+*.tfvars
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfplan files
+*.tfplan
+
+# .terraform.lock.hcl files
+.terraform.lock
+.terraform.lock.*
+
+#IDE
+/.idea
+*.iml
+/temp
+.env
+*.bak
+
+# osx
+.DS_Store
+
+**.infracost/

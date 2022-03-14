@@ -1,0 +1,23 @@
+aws_allowed_account_ids = ["<aws account id here>>"]
+aws_region              = "eu-west-1"
+
+name = "dna"
+tags = {
+  Environment = "dev"
+  Terraform   = "true"
+}
+
+expose_service                  = true
+service_name                    = "dna"
+service_container_image         = "luafanti/dna-html"
+service_container_image_version = "v1"
+service_container_port          = 80
+service_container_hc_path       = "/"
+service_container_hc_port       = 80
+service_desired_count           = 1
+
+route53_zone_name   = "szkolenia-aws.pl"
+route53_record_name = "dna"
+
+create_cloud_front = true
+
